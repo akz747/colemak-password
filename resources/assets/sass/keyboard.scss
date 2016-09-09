@@ -1,0 +1,66 @@
+.keyboard {
+  min-width: 35em;
+  /*border: thin solid blue;*/
+}
+
+.keyboard-row {
+  width: 100%;
+  min-height: $key-width;
+  margin-top: $key-width / 5;
+  /*border: thin solid red;*/
+}
+
+.key {
+  width: $key-width;
+  min-height: $key-width;
+  border: thin solid $key-border-color;
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: center;
+  line-height: $key-width;
+  border-radius: $key-width / 5;
+  color: $key-text-color;
+}
+
+.common, .number, .leet, .punctuation, .special-char {
+  background-color: $key-bg-color;
+}
+
+.special-char, .function {
+
+}
+
+
+#key-backspace {
+  width: $key-width * 2.5;
+}
+
+#key-tab, #key-backslash, #key-caps-lock {
+  width: $key-width * 1.75;
+}
+
+#key-caps-lock {
+  width: $key-width * 1.85;
+}
+
+#key-enter {
+  width: $key-width * 2.8;
+}
+
+#key-shift {
+  width: $key-width * 2.89;
+}
+
+#key-left-meta {
+  width: $key-width * 5;
+  visibility: hidden;
+}
+
+#key-right-meta {
+  width: $key-width * 5.8;
+  visibility: hidden;
+}
+
+#key-space {
+  width: $key-width * 6;
+}

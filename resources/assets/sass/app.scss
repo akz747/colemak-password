@@ -1,0 +1,62 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono|Roboto+Condensed);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "keyboard";
+
+
+body {
+  background-color: $body-bg;
+  font-family: $font-family-sans-serif;
+  font-size: 1.5em;
+  color: $text-color;
+}
+a {
+  color: $link-color;
+  text-decoration: underline;
+}
+a:hover {
+  color: $link-color;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+.title {
+  font-family: $font-family-mono;
+  font-size: 2.5em;
+  color: $heading-color;
+}
+.question {
+  font-family: $font-family-mono;
+  font-size: 1.5em;
+  color: $heading-color;
+}
+.password-display {
+  margin-top: .5em;
+  font-family: $font-family-mono;
+  border: thin solid $key-border-color;
+  background-color: #FFFFFF;
+  color: $green;
+  border-radius: 2em;
+  font-size: 3em;
+}
+.divider {
+  border-top: 1px solid $green;
+}
+.key-group {
+  font-family: $font-family-mono;
+  background-color: $light-green;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.number-input {
+  width: 3em;
+}
